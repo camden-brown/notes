@@ -24,5 +24,15 @@
     total = 0; // Has no dependency on <array> so it is constant O(1)
     return total; // Has no dependency on <array> so it is constant O(1)
   }
+
+  // T2 = O(1) + n * O(1) + O(1)
+  // total + array * total add + return
+  findSum(array) => {
+    total = 0; // O(1)
+    for (let i = 0; i < array.length; i++) { //O(1)
+      total += i // O(1)
+    }
+    return total; // O(1)
+  }
 ```
 
